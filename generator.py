@@ -13,9 +13,7 @@ def getWords(fileName):
     tempList = []
     f = open(fileName+".txt",'r')
     for line in f:
-        words = line.split(", ")
-        for word in words:
-            tempList.append(word)
+        tempList = line.split(", ")
     return tuple(tempList)
 
 articles = getWords("articles")
