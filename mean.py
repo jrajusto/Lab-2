@@ -30,6 +30,7 @@ def mode(sample):
     for key in theDictionary:
         if theDictionary[key] == theMaximum:
             print("The mode is", key)
+    return theDictionary
 
 def median(sample):
     if len(sample) == 0:
