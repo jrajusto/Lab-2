@@ -7,7 +7,7 @@ Executed by: Dylan Lyle A. Pagkaliwangan
 The program computes for the mean, median, and mode of a given integer list
 Each function also returns 0 if the list is empty
 """
-def average(sample):
+def mean(sample):
     if len(sample) == 0:
         return 0
     ave = 0
@@ -44,7 +44,7 @@ def median(sample):
         return (sample[midpoint] + sample[midpoint - 1]) / 2
 
 def main():
-    print("The average is", average([45,66,22,10,15,88,15,31,90]))
+    print("The average is", mean([45,66,22,10,15,88,15,31,90]))
     print(mode([45,66,22,10,15,88,15,31,90]))
     print(median([45,66,22,10,15,88,15,31,90]))
 main()
